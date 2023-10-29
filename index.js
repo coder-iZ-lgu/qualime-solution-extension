@@ -28,10 +28,17 @@ const activateInputs = (solutions) => {
 
             if (solution.type == 3) {
                 const input = getElementById(option.id);
-                input.value = option.value;
+
+                if (input) {
+                    input.value = option.value;
+                }
+
             } else {
                 const input = getElementById(option.id);
-                input.checked = true;
+
+                if (input) {
+                    input.checked = true;
+                }
             }
         }
     }
